@@ -1,0 +1,12 @@
+Vagrant.configure(2) do |config|
+  config.vm.box = 'custom/xenial-server64'
+  config.vm.box_url = 'https://cloud-images.ubuntu.com/releases/16.04/release/ubuntu-16.04-server-cloudimg-amd64-vagrant.box'
+
+  config.vm.provider 'virtualbox' do |v|
+    v.name = "WoR - ISO Builder"
+  end
+
+  config.vm.synced_folder '.', "/vagrant"
+
+  config.vm.provision :shell, path: 'build-iso.sh', env: { HOST_ADDRESS: ENV['HOST_ADDRESS'] }
+end
