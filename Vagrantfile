@@ -1,7 +1,7 @@
 Vagrant.configure('2') do |config|
   ### Linux
   # config.vm.box = 'ubuntu/xenial64'
-  config.vm.box = 'ubuntu/xenial32'
+  config.vm.box = 'ybart/ubuntu-xenial-i386'
 
   config.vm.synced_folder '.', "/vagrant"
 

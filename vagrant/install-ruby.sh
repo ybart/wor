@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-echo 'Installing Ruby...'
+echo
+echo 'Installation de Ruby via RVM...' >&2
 
 source $HOME/.rvm/scripts/rvm
 

@@ -115,8 +115,7 @@ Nous allons créer une nouvelle VM avec VirtualBox. Nous allons la configurer av
 8. À la fin de l'installation éjectez le CD et éteignez la VM si nécessaire.
 9. Vous pouvez ensuite créer la box (en utilisant le nom de la VM dans VirtualBox) :
     ````
-    firefox https://github.com/ashantyk/vagrant-box-scripts # Optimiser la taille de la box
-    VBoxManage modifyhd "~/VirtualBox VMs/ubuntu-xenial-i386/ubuntu-xenial-i386.vdi" --compact
+    VBoxManage modifyhd ~/VirtualBox\ VMs/ubuntu-xenial-i386/ubuntu-xenial-i386.vdi --compact
     vagrant package --base ubuntu-xenial-i386 --output ubuntu-xenial-i386.box
     ```
 

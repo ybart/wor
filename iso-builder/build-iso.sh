@@ -37,7 +37,7 @@ cp -rT /mnt/iso /opt/ubuntu-installer
 
 umount /mnt/iso
 
-cp /vagrant/ks.cfg /opt/ubuntu-installer/ks.cfg
+#cp /vagrant/ks.cfg /opt/ubuntu-installer/ks.cfg
 cp /vagrant/preseed.cfg /opt/ubuntu-installer/preseed.cfg
 
 # Replace txt.cfg with our custom one and backup original one.

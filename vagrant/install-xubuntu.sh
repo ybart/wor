@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-echo 'Installing xubuntu...'
+echo
+echo 'Installation de xubuntu...' >&2
 
 apt-get install -y --no-install-recommends xubuntu-desktop
 apt-get install -y xfce4-terminal xfce4-quicklauncher-plugin
